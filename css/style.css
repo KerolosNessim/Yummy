@@ -1,0 +1,53 @@
+/**  main styles */
+body {
+  background-color: #0d0d0d;
+  color: white;
+  background-image: url("../images/light-patten.svg");
+  overflow: hidden;
+}
+i {
+  cursor: pointer;
+}
+input::placeholder {
+  color: rgba(255, 255, 255);
+}
+/**  main styles */
+/*&  sidebar styles */
+.logo {
+  width: 50px;
+}
+aside {
+  z-index: 99;
+}
+aside ul li {
+  cursor: pointer;
+}
+aside .side-tabs {
+  background-color: #0d0d0d;
+}
+/*&  sidebar styles */
+/*^ main content styles  */
+.meal-overlayer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  top: 100%;
+  transition: all 0.2s;
+}
+.meal{
+  cursor: pointer;
+}
+.meal:hover .meal-overlayer {
+  top: 0;
+}
+.area {
+  width: 200px;
+  height: 200px;
+  font-size: 70px;
+}
+/*! loader styels  */
+.loading-screen {
+  z-index: 999;
+  display: flex;
+}
