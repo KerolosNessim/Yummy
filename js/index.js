@@ -206,6 +206,7 @@ let getIngredMeals = async (ingred) => {
   console.log(meals);
 };
 let getMealDetails = async (mealID) => {
+  closeSide();
   $(".search").html("");
   let respone = await fetch(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`
